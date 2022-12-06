@@ -1092,10 +1092,3 @@ key:Button("Get Key",function(t)
 setclipboard("GhostLord")
 end)
 
-function Key()
-    if _G.Key == "GhostLord" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GGhostVN/GhostLord/main/Main"))()
-    else
-        game.Players.LocalPlayer:Kick("Key is error Key Normal or Key Premium") 
-    end
-end
