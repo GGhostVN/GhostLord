@@ -1080,15 +1080,5 @@ key = Library:Tab("Enter Key Here")
 
 key:Seperator = ("Key System")
 
-key:Textbox("Key", "Put key here", function(value)
-    _G.Key = value
-end)
-
-key:Button("Check Key", function(t)
-    Key(t)
-end)
-
-key:Button("Get Key",function(t)
-setclipboard("GhostLord")
-end)
+key:Textbox("Key", "Put key here")
 
