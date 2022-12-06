@@ -1098,4 +1098,3 @@ key:Button("Get Key",function(t)
 setclipboard("GhostLord")
 end)
 
-return library
