@@ -1,0 +1,59 @@
+local SimpleUi = loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/Ui__Project/Script/SimpleUi"))()
+local Main = SimpleUi:create('Leak by simple Hub')
+local Menu = Main:Menu('simple hub')
+local Page = Menu:Page()
+local Page2 = Menu:Page()
+
+-- Logo Change --
+game:GetService("CoreGui").Simlib.Mainsceen.Topbar.ImageLabel.Image = "http://www.roblox.com/asset/?id=7040391851"
+-- Logo Change --
+
+-- Head Name -- \\ Bit
+for __,head in pairs(game:GetService("CoreGui").Simlib.Mainsceen.Topbar:GetDescendants()) do
+    if head:IsA"TextLabel" then
+        if head.Text == "SIMPLE" then
+            head.Text = "Fuck"
+        end
+    end
+end
+--Head Name \\ EiEi
+
+Page:Label('simple Hub')
+Page:Button('Button by simple',false,function()
+    print("simple no1")
+end)
+Page:Toggle('Toggle by simple kak',false,false,false,function(t) -- arg 1 Text , arg 2 ไม่รู้ , arg 3 เปิด - ปิด , arg 4 ไม่รู้ , arg 5 callback
+    print(t)
+end)
+Page:Button('Button by simple kak',false,function()
+    print("simpleNo.1")
+end)
+Page2:Dropdown('Dropdown!',false,{"Test","simple"},function(t)
+    print(t)
+end)
+Page2:Button('Button by simple kak',false,function()
+    print("simpleNo.1")
+end)
+
+-- ColorChanger
+for k,v in pairs(game:GetService("CoreGui").Simlib:GetDescendants()) do
+    if v:IsA"TextButton" then
+        if v.BackgroundColor3 == Color3.fromRGB(68, 187, 165) then
+            v.BackgroundColor3 = Color3.fromRGB(255,255,255)
+        end
+    end
+end
+for k,v in pairs(game:GetService("CoreGui").Simlib:GetDescendants()) do
+    if v:IsA"TextLabel" then
+        if v.TextColor3 == Color3.fromRGB(68, 187, 165) then
+            v.TextColor3 = Color3.fromRGB(255,255,255)
+        end
+    end
+end
+for k,v in pairs(game:GetService("CoreGui").Simlib:GetDescendants()) do
+    if v:IsA"TextLabel" then
+        if v.TextColor3 == Color3.fromRGB(33, 133, 113) then
+            v.TextColor3 = Color3.fromRGB(255,255,255)
+        end
+    end
+end
