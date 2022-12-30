@@ -1,4 +1,3 @@
-```lua
 local SimpleUi = loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/Ui__Project/Script/SimpleUi"))()
 local Main = SimpleUi:create('Leak by simple Hub')
 local Menu = Main:Menu('simple hub')
@@ -656,4 +655,3 @@ for k,v in pairs(game:GetService("CoreGui").Simlib:GetDescendants()) do
         end
     end
 end
-```
